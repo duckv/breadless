@@ -4,6 +4,7 @@ import { CommonModule } from "@angular/common";
 @Component({
   selector: "app-menu",
   standalone: true,
+  imports: [CommonModule],
   template: `
     <!-- Hero Section -->
     <section class="luxury-bg text-white section-padding">
@@ -687,4 +688,215 @@ import { CommonModule } from "@angular/common";
     </section>
   `,
 })
-export class MenuComponent {}
+export class MenuComponent {
+
+  printMenu() {
+    // Add print-specific styles
+    const printStyles = `
+      <style>
+        @media print {
+          .no-print { display: none !important; }
+          .luxury-bg, .gradient-bg { background: white !important; color: black !important; }
+          .text-white { color: black !important; }
+          .text-elegant-pearl { color: #666 !important; }
+          .card-luxury { border: 1px solid #ddd !important; box-shadow: none !important; }
+          .section-padding { padding: 20px 0 !important; }
+          .container-custom { max-width: 100% !important; margin: 0 !important; padding: 0 20px !important; }
+          body { font-size: 12pt !important; line-height: 1.4 !important; }
+          h1, h2 { page-break-after: avoid !important; }
+          .menu-item { page-break-inside: avoid !important; }
+        }
+      </style>
+    `;
+
+    // Create printable content
+    const printContent = document.querySelector('.menu-content')?.innerHTML || '';
+    const printWindow = window.open('', '_blank');
+
+    if (printWindow) {
+      printWindow.document.write(`
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <title>Bread N' Brew - Menu</title>
+          ${printStyles}
+          <style>
+            body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+            h1 { text-align: center; color: #ec4899; margin-bottom: 10px; }
+            h2 { color: #333; border-bottom: 2px solid #ec4899; padding-bottom: 5px; }
+            h3 { color: #666; margin-top: 20px; }
+            .menu-item { margin-bottom: 15px; padding-bottom: 10px; border-bottom: 1px solid #eee; }
+            .price { font-weight: bold; color: #d97706; }
+            .header { text-align: center; margin-bottom: 30px; }
+            .footer { text-align: center; margin-top: 30px; font-size: 10pt; color: #666; }
+          </style>
+        </head>
+        <body>
+          <div class="header">
+            <h1>Bread N' Br☕w</h1>
+            <p>Artisan Breads, Perfect Brews, & Fine Patisseries</p>
+            <p>512 Springfield Avenue, Berkeley Heights, NJ • (908) 933-0123</p>
+          </div>
+          ${printContent}
+          <div class="footer">
+            <p>Fresh baking begins daily at 5:00 AM • All prices subject to change</p>
+            <p>Visit us: Daily 7:00 AM – 6:00 PM • www.breadnbrew.com</p>
+          </div>
+        </body>
+        </html>
+      `);
+      printWindow.document.close();
+      printWindow.print();
+    }
+  }
+
+  exportToText() {
+    const menuText = this.generateMenuText();
+    const blob = new Blob([menuText], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'bread-n-brew-menu.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+  }
+
+  private generateMenuText(): string {
+    return `
+BREAD N' BREW
+Artisan Breads, Perfect Brews, & Fine Patisseries
+512 Springfield Avenue, Berkeley Heights, NJ
+Phone: (908) 933-0123
+Hours: Daily 7:00 AM – 6:00 PM
+
+═══════════════════════════════════════════════════════════════
+
+BREAKFAST MENU (8:00 AM – 11:00 AM)
+
+ASSORTED PASTRIES
+From Balthazar Bakery – Prices based on current Balthazar Fall 2024 pricing
+
+• Croissant
+  Buttery, flaky, traditional French pastry                    $6
+
+• Pain au Chocolat
+  Dark chocolate filled pastry                                 $8
+
+• Pure Butter Scone
+  Classic English-style scone                                  $5
+
+• Oat Currant Scone
+  Hearty oats with sweet currants                             $5
+
+• Kouign Amann
+  Caramelized Breton pastry                                   $9
+
+• Seasonal Danish
+  Chef's seasonal selection                                    $7
+
+BAGELS
+
+• Fresh Bagels (Plain, Sesame, or Poppy)                     $2.50
+  Add Butter                                                  +$1
+  Add Cream Cheese                                           +$2
+
+EGGS
+
+• Egg Sandwich (On Balthazar brioche)                        $8
+  Add Cheese (Monterey Jack, American, Cheddar)             +$2
+  Add Meat (Sausage Patty, Bacon, Taylor Ham)               +$3
+  Add Potato Rosti                                           +$3
+
+• Frittata Florentine
+  Eggs, spinach, gruyere, cherry tomato                      $9/slice
+
+• Yogurt Parfait
+  Greek yogurt, mixed berries, granola, candied orange       $11
+
+═══════════════════════════════════════════════════════════════
+
+ALL DAY MENU (8:00 AM – 3:00 PM)
+
+SALADS
+Add grilled chicken or grilled shrimp to any salad for $9
+
+• Caesar Salad
+  Little gem, parmesan, garlic crouton, classic vinaigrette  $15
+
+• Spinach Salad
+  Baby spinach, hard boiled egg, pickled onion,
+  avocado vinaigrette                                         $16
+
+• Grain Salad
+  Farro, quinoa, shredded carrot, corn, feta, cherry tomato,
+  baby arugula, dijon vinaigrette                            $16
+
+• Mixed Green Salad
+  Baby greens, shaved carrots, balsamic vinaigrette          $11
+
+• Grain Bowl
+  Quinoa, farro, walnuts, dried cranberry, roasted squash,
+  pickled onion, raspberry vinaigrette                       $12
+
+SANDWICHES
+
+• Parisian Ham & Brie Sandwich
+  French ham, triple cream brie, arugula, pickled onion,
+  fig jam, demi baguette                                     $18
+
+• Eggplant & Sesame Sandwich
+  Marinated Japanese eggplant, tahini vinaigrette,
+  sumac spiced carrots, baby spinach, sesame roll           $17
+
+• Chicken Salad Sandwich
+  Shredded chicken breast, grapes, apple, herb mayo,
+  cranberry pecan bread                                      $17
+
+• Crispy Shrimp Po' Boy
+  Breaded flash fried shrimp, shredded lettuce, tomato,
+  mayo, Leidenheimer roll                                    $21
+
+• Roast Beef & Manchego Sandwich
+  Porcini rubbed Angus beef, horseradish mayo, cheddar,
+  pickled cauliflower relish, sesame roll                   $19
+
+• Mediterranean Sandwich
+  Pita, marinated eggplant, feta, pickled vegetables,
+  lettuce, cucumber, tzatziki                               $13
+
+• Jambon Beurre
+  Baguette, Parisian ham, gruyere cheese, dijon            $14
+
+ADDITIONAL SELECTIONS
+
+• Avocado Toast
+  Toasted sourdough, lemon avocado mash, everything spice   $12
+
+• Yogurt Parfait
+  Greek yogurt, granola, mixed berries, local honey        $9
+
+• Frittata
+  Mixed seasonal vegetables, cheddar cheese                 $9/slice
+
+• Crispy French Toast Sticks
+  Brioche, cinnamon, maple honey butter                    $9
+
+• Minestrone Soup
+  Ditalini pasta, cannellini beans, tomato,
+  vegetable stock, parmesan                                 $11
+
+Note: Add grilled chicken to Caesar Salad, Mixed Green Salad,
+or Grain Bowl for $7
+
+═══════════════════════════════════════════════════════════════
+
+Fresh baking begins daily at 5:00 AM
+All prices subject to change
+Visit us online or call for catering inquiries
+
+Thank you for choosing Bread N' Brew!
+    `;
+  }
+}
