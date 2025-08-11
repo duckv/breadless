@@ -28,12 +28,12 @@ import { RouterLink } from "@angular/router";
               <div class="mb-6">
                 <div class="flex items-center space-x-1 mb-2">
                   <span
-                    class="text-5xl md:text-6xl font-display font-bold text-brand-primary"
+                    class="text-5xl md:text-6xl font-display font-bold text-pink-500"
                     >Bread N' Br</span
                   >
-                  <span class="text-4xl md:text-5xl">☕︎</span>
+                  <span class="text-4xl md:text-5xl text-pink-500">☕︎</span>
                   <span
-                    class="text-5xl md:text-6xl font-display font-bold text-brand-primary"
+                    class="text-5xl md:text-6xl font-display font-bold text-pink-500"
                     >w</span
                   >
                 </div>
