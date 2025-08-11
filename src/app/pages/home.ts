@@ -120,45 +120,90 @@ import { RouterLink } from '@angular/router';
     </section>
 
     <!-- Specialties Section -->
-    <section class="section-padding gradient-bg">
+    <section class="section-padding luxury-bg text-white">
       <div class="container-custom">
-        <h2 class="section-title text-gray-900">Our Specialties</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="card overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                 alt="Artisan breads" 
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-3 text-gray-900">Artisan Breads</h3>
-              <p class="text-gray-600 mb-4">From classic sourdough to specialty grain loaves, each bread is crafted with time-honored techniques.</p>
-              <a routerLink="/menu" class="text-brand-primary font-semibold hover:text-brand-secondary transition-colors duration-300">
-                View Bread Selection →
-              </a>
+        <div class="text-center mb-20 animate-slide-up">
+          <h2 class="section-title text-white">Our Signature Offerings</h2>
+          <div class="divider-elegant mb-8"></div>
+          <p class="subtitle text-elegant-pearl max-w-3xl mx-auto">
+            Discover the artistry behind every creation, from hand-laminated pastries to perfectly extracted espresso.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div class="group animate-slide-up">
+            <div class="relative overflow-hidden mb-8">
+              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                   alt="Artisan breads"
+                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6">
+                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                </div>
+              </div>
             </div>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">Artisan Breads</h3>
+            <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
+              From classic sourdough to specialty grain loaves, each bread is crafted with time-honored French techniques and the finest organic flours.
+            </p>
+            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+              View Selection
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
           </div>
-          <div class="card overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                 alt="Specialty coffee" 
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-3 text-gray-900">Specialty Coffee</h3>
-              <p class="text-gray-600 mb-4">Single-origin beans expertly roasted and brewed to perfection, from espresso to pour-over.</p>
-              <a routerLink="/menu" class="text-brand-primary font-semibold hover:text-brand-secondary transition-colors duration-300">
-                Coffee Menu →
-              </a>
+
+          <div class="group animate-slide-up">
+            <div class="relative overflow-hidden mb-8">
+              <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                   alt="Specialty coffee"
+                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6">
+                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
+                  <span class="text-white text-lg">☕</span>
+                </div>
+              </div>
             </div>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">Perfect Brews</h3>
+            <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
+              Single-origin beans expertly roasted and brewed to perfection. From traditional espresso to innovative pour-overs, every cup tells a story.
+            </p>
+            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+              Coffee Menu
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
           </div>
-          <div class="card overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                 alt="Fresh pastries" 
-                 class="w-full h-48 object-cover">
-            <div class="p-6">
-              <h3 class="text-xl font-bold mb-3 text-gray-900">Fresh Pastries</h3>
-              <p class="text-gray-600 mb-4">Delicate croissants, decadent cakes, and seasonal treats that pair perfectly with our coffee.</p>
-              <a routerLink="/menu" class="text-brand-primary font-semibold hover:text-brand-secondary transition-colors duration-300">
-                Pastry Selection →
-              </a>
+
+          <div class="group animate-slide-up">
+            <div class="relative overflow-hidden mb-8">
+              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                   alt="Fresh pastries"
+                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
+              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <div class="absolute bottom-6 left-6 right-6">
+                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
+                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+              </div>
             </div>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">Fine Patisseries</h3>
+            <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
+              Delicate croissants, decadent seasonal tarts, and exquisite viennoiseries crafted with European precision and American innovation.
+            </p>
+            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+              Pastry Collection
+              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
