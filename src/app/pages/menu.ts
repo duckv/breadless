@@ -63,7 +63,7 @@ import { CommonModule } from "@angular/common";
     </section>
 
     <!-- Menu Content -->
-    <section class="section-padding gradient-bg">
+    <section class="section-padding gradient-bg menu-content">
       <div class="container-custom">
         <!-- Breakfast Section -->
         <div class="card-luxury p-12 mb-16 animate-slide-up">
@@ -804,7 +804,7 @@ BAGELS
 
 EGGS
 
-• Egg Sandwich (On Balthazar brioche)                        $8
+��� Egg Sandwich (On Balthazar brioche)                        $8
   Add Cheese (Monterey Jack, American, Cheddar)             +$2
   Add Meat (Sausage Patty, Bacon, Taylor Ham)               +$3
   Add Potato Rosti                                           +$3
