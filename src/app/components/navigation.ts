@@ -154,7 +154,7 @@ import { CommonModule } from "@angular/common";
               >Contact</a
             >
             <a
-              href="https://lh.shift4.com/sign-in"
+              href="https://lh.shift4.com/sign-in"\n              target="_blank"
               class="btn-primary text-center mt-6 mx-4"
             >
               <svg
