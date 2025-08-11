@@ -44,8 +44,8 @@ import { Component } from "@angular/core";
               2024 pricing
             </p>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div class="menu-item">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -61,7 +61,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -77,7 +77,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -93,7 +93,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -109,7 +109,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -125,7 +125,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -185,7 +185,7 @@ import { Component } from "@angular/core";
               Eggs
             </h3>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start mb-4">
                   <div>
                     <h4
@@ -215,7 +215,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -276,7 +276,7 @@ import { Component } from "@angular/core";
             </p>
 
             <div class="space-y-8">
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -292,7 +292,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -309,7 +309,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -326,7 +326,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -342,7 +342,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -369,7 +369,7 @@ import { Component } from "@angular/core";
               Sandwiches
             </h3>
             <div class="space-y-8">
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -386,7 +386,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -403,7 +403,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -420,7 +420,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -437,7 +437,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -454,7 +454,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -471,7 +471,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -497,7 +497,7 @@ import { Component } from "@angular/core";
               Additional Selections
             </h3>
             <div class="space-y-8">
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -513,7 +513,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -529,7 +529,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -550,7 +550,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
@@ -566,7 +566,7 @@ import { Component } from "@angular/core";
                 </div>
               </div>
 
-              <div class="menu-item">
+              <div class="menu-item border-b border-elegant-stone/10 pb-4">
                 <div class="flex justify-between items-start">
                   <div>
                     <h4
