@@ -67,7 +67,7 @@ import { CommonModule } from "@angular/common";
               class="nav-link"
               >Contact</a
             >
-            <a href="https://lh.shift4.com/sign-in" class="btn-primary ml-6">
+            <a href="https://lh.shift4.com/sign-in" target="_blank" class="btn-primary ml-6">
               <svg
                 class="w-4 h-4 inline mr-2"
                 fill="currentColor"
