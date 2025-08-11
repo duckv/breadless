@@ -28,18 +28,18 @@ import { CommonModule } from '@angular/common';
 
           <!-- Desktop Menu -->
           <div class="hidden md:flex items-center space-x-8">
-            <a routerLink="/" 
-               routerLinkActive="text-brand-primary font-semibold" 
+            <a routerLink="/"
+               routerLinkActive="text-brand-gold font-semibold"
                [routerLinkActiveOptions]="{exact: true}"
                class="nav-link">Home</a>
-            <a routerLink="/menu" 
-               routerLinkActive="text-brand-primary font-semibold"
+            <a routerLink="/menu"
+               routerLinkActive="text-brand-gold font-semibold"
                class="nav-link">Menu</a>
-            <a routerLink="/about" 
-               routerLinkActive="text-brand-primary font-semibold"
+            <a routerLink="/about"
+               routerLinkActive="text-brand-gold font-semibold"
                class="nav-link">About</a>
-            <a routerLink="/catering" 
-               routerLinkActive="text-brand-primary font-semibold"
+            <a routerLink="/catering"
+               routerLinkActive="text-brand-gold font-semibold"
                class="nav-link">Catering</a>
             <a routerLink="/contact"
                routerLinkActive="text-brand-gold font-semibold"
