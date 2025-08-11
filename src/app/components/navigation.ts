@@ -16,12 +16,12 @@ import { CommonModule } from "@angular/common";
               <div class="flex flex-col">
                 <div class="flex items-center space-x-1">
                   <span
-                    class="text-3xl font-display font-bold text-brand-primary"
+                    class="text-3xl font-display font-bold text-pink-500"
                     >Bread N' Br</span
                   >
                   <span class="text-2xl">☕︎</span>
                   <span
-                    class="text-3xl font-display font-bold text-brand-primary"
+                    class="text-3xl font-display font-bold text-pink-500"
                     >w</span
                   >
                 </div>
