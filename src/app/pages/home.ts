@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
   imports: [RouterLink],
   template: `
@@ -10,10 +10,14 @@ import { RouterLink } from '@angular/router';
     <section class="relative min-h-screen">
       <!-- Background with overlay -->
       <div class="absolute inset-0">
-        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-             alt="Elegant coffee shop interior"
-             class="w-full h-full object-cover">
-        <div class="absolute inset-0 bg-gradient-to-r from-elegant-charcoal/80 via-elegant-charcoal/60 to-transparent"></div>
+        <img
+          src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+          alt="Elegant coffee shop interior"
+          class="w-full h-full object-cover"
+        />
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-elegant-charcoal/80 via-elegant-charcoal/60 to-transparent"
+        ></div>
       </div>
 
       <!-- Content -->
@@ -23,29 +27,59 @@ import { RouterLink } from '@angular/router';
             <div class="text-white animate-slide-up">
               <div class="mb-6">
                 <div class="flex items-center space-x-1 mb-2">
-                  <span class="text-5xl md:text-6xl font-display font-bold text-brand-primary">Bread N' Br</span>
+                  <span
+                    class="text-5xl md:text-6xl font-display font-bold text-brand-primary"
+                    >Bread N' Br</span
+                  >
                   <span class="text-4xl md:text-5xl">☕︎</span>
-                  <span class="text-5xl md:text-6xl font-display font-bold text-brand-primary">w</span>
+                  <span
+                    class="text-5xl md:text-6xl font-display font-bold text-brand-primary"
+                    >w</span
+                  >
                 </div>
-                <p class="text-sm md:text-base text-elegant-pearl uppercase tracking-widest font-medium ml-1">
+                <p
+                  class="text-sm md:text-base text-elegant-pearl uppercase tracking-widest font-medium ml-1"
+                >
                   Artisan Breads, Perfect Brews, & Fine Patisseries
                 </p>
               </div>
               <div class="divider-elegant mb-8"></div>
-              <p class="text-xl md:text-2xl font-elegant leading-relaxed mb-8 text-elegant-pearl">
-                Freshly baked pastries and specialty coffee in the heart of Berkeley Heights.
-                Experience artisan quality with every bite and sip.
+              <p
+                class="text-xl md:text-2xl font-elegant leading-relaxed mb-8 text-elegant-pearl"
+              >
+                Freshly baked pastries and specialty coffee in the heart of
+                Berkeley Heights. Experience artisan quality with every bite and
+                sip.
               </p>
               <div class="flex flex-col sm:flex-row gap-6">
                 <a routerLink="/menu" class="btn-primary text-center">
                   View Our Menu
-                  <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  <svg
+                    class="w-5 h-5 inline ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </a>
-                <a href="tel:908-933-0123" class="btn-secondary text-center border-white text-white hover:bg-white hover:text-elegant-charcoal">
-                  <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                <a
+                  href="tel:908-933-0123"
+                  class="btn-secondary text-center border-white text-white hover:bg-white hover:text-elegant-charcoal"
+                >
+                  <svg
+                    class="w-5 h-5 inline mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    />
                   </svg>
                   (908) 933-0123
                 </a>
@@ -53,21 +87,33 @@ import { RouterLink } from '@angular/router';
             </div>
             <div class="animate-fade-in hidden lg:block">
               <div class="relative">
-                <div class="absolute -inset-4 bg-gradient-to-r from-brand-gold/30 to-brand-bronze/30 blur-lg"></div>
-                <div class="relative bg-white/10 backdrop-blur-sm border border-white/20 p-8">
+                <div
+                  class="absolute -inset-4 bg-gradient-to-r from-brand-gold/30 to-brand-bronze/30 blur-lg"
+                ></div>
+                <div
+                  class="relative bg-white/10 backdrop-blur-sm border border-white/20 p-8"
+                >
                   <div class="grid grid-cols-2 gap-6">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Artisan bread"
-                         class="w-full h-32 object-cover">
-                    <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Specialty coffee"
-                         class="w-full h-32 object-cover">
-                    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Fresh pastries"
-                         class="w-full h-32 object-cover">
-                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                         alt="Coffee preparation"
-                         class="w-full h-32 object-cover">
+                    <img
+                      src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Artisan bread"
+                      class="w-full h-32 object-cover"
+                    />
+                    <img
+                      src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Specialty coffee"
+                      class="w-full h-32 object-cover"
+                    />
+                    <img
+                      src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Fresh pastries"
+                      class="w-full h-32 object-cover"
+                    />
+                    <img
+                      src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                      alt="Coffee preparation"
+                      class="w-full h-32 object-cover"
+                    />
                   </div>
                 </div>
               </div>
@@ -84,36 +130,86 @@ import { RouterLink } from '@angular/router';
           <h2 class="section-title">Why Choose Bread N' Br☕︎w?</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle max-w-3xl mx-auto">
-            Three pillars of excellence that define our commitment to Berkeley Heights' discerning palates.
+            Three pillars of excellence that define our commitment to Berkeley
+            Heights' discerning palates.
           </p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div class="card-luxury p-12 text-center group animate-slide-up">
-            <div class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-6 text-elegant-charcoal">Artisanal Excellence</h3>
-            <p class="text-elegant-stone font-elegant leading-relaxed">Handcrafted daily using traditional French techniques and the finest ingredients sourced from premier suppliers worldwide.</p>
+            <h3
+              class="text-2xl font-display font-bold mb-6 text-elegant-charcoal"
+            >
+              Artisanal Excellence
+            </h3>
+            <p class="text-elegant-stone font-elegant leading-relaxed">
+              Handcrafted daily using traditional French techniques and the
+              finest ingredients sourced from premier suppliers worldwide.
+            </p>
           </div>
           <div class="card-luxury p-12 text-center group animate-slide-up">
-            <div class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-6 text-elegant-charcoal">Fresh Daily</h3>
-            <p class="text-elegant-stone font-elegant leading-relaxed">Every croissant, every loaf, every pastry is baked fresh each morning before dawn, ensuring uncompromising quality and flavor.</p>
+            <h3
+              class="text-2xl font-display font-bold mb-6 text-elegant-charcoal"
+            >
+              Fresh Daily
+            </h3>
+            <p class="text-elegant-stone font-elegant leading-relaxed">
+              Every croissant, every loaf, every pastry is baked fresh each
+              morning before dawn, ensuring uncompromising quality and flavor.
+            </p>
           </div>
           <div class="card-luxury p-12 text-center group animate-slide-up">
-            <div class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-              <svg class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 20 20">
-                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+            <div
+              class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center group-hover:scale-110 transition-transform duration-500"
+            >
+              <svg
+                class="w-10 h-10 text-white"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                  clip-rule="evenodd"
+                />
               </svg>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-6 text-elegant-charcoal">Community Heritage</h3>
-            <p class="text-elegant-stone font-elegant leading-relaxed">More than a bakery—we're Berkeley Heights' cherished gathering place, where neighbors become friends over perfect coffee.</p>
+            <h3
+              class="text-2xl font-display font-bold mb-6 text-elegant-charcoal"
+            >
+              Community Heritage
+            </h3>
+            <p class="text-elegant-stone font-elegant leading-relaxed">
+              More than a bakery—we're Berkeley Heights' cherished gathering
+              place, where neighbors become friends over perfect coffee.
+            </p>
           </div>
         </div>
       </div>
@@ -126,82 +222,166 @@ import { RouterLink } from '@angular/router';
           <h2 class="section-title text-white">Our Signature Offerings</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle text-elegant-pearl max-w-3xl mx-auto">
-            Discover the artistry behind every creation, from hand-laminated pastries to perfectly extracted espresso.
+            Discover the artistry behind every creation, from hand-laminated
+            pastries to perfectly extracted espresso.
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
           <div class="group animate-slide-up">
             <div class="relative overflow-hidden mb-8">
-              <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                   alt="Artisan breads"
-                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <img
+                src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Artisan breads"
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
               <div class="absolute bottom-6 left-6 right-6">
-                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                <div
+                  class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                    />
                   </svg>
                 </div>
               </div>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-4 text-white">Artisan Breads</h3>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">
+              Artisan Breads
+            </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
-              From classic sourdough to specialty grain loaves, each bread is crafted with time-honored French techniques and the finest organic flours.
+              From classic sourdough to specialty grain loaves, each bread is
+              crafted with time-honored French techniques and the finest organic
+              flours.
             </p>
-            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+            <a
+              routerLink="/menu"
+              class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm"
+            >
               View Selection
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
           </div>
 
           <div class="group animate-slide-up">
             <div class="relative overflow-hidden mb-8">
-              <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                   alt="Specialty coffee"
-                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <img
+                src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Specialty coffee"
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
               <div class="absolute bottom-6 left-6 right-6">
-                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
+                <div
+                  class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4"
+                >
                   <span class="text-white text-lg">☕</span>
                 </div>
               </div>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-4 text-white">Perfect Brews</h3>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">
+              Perfect Brews
+            </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
-              Single-origin beans expertly roasted and brewed to perfection. From traditional espresso to innovative pour-overs, every cup tells a story.
+              Single-origin beans expertly roasted and brewed to perfection.
+              From traditional espresso to innovative pour-overs, every cup
+              tells a story.
             </p>
-            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+            <a
+              routerLink="/menu"
+              class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm"
+            >
               Coffee Menu
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
           </div>
 
           <div class="group animate-slide-up">
             <div class="relative overflow-hidden mb-8">
-              <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                   alt="Fresh pastries"
-                   class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110">
-              <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+              <img
+                src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+                alt="Fresh pastries"
+                class="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"
+              ></div>
               <div class="absolute bottom-6 left-6 right-6">
-                <div class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4">
-                  <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                <div
+                  class="w-12 h-12 bg-brand-gold/90 backdrop-blur-sm flex items-center justify-center mb-4"
+                >
+                  <svg
+                    class="w-6 h-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
               </div>
             </div>
-            <h3 class="text-2xl font-display font-bold mb-4 text-white">Fine Patisseries</h3>
+            <h3 class="text-2xl font-display font-bold mb-4 text-white">
+              Fine Patisseries
+            </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed mb-6">
-              Delicate croissants, decadent seasonal tarts, and exquisite viennoiseries crafted with European precision and American innovation.
+              Delicate croissants, decadent seasonal tarts, and exquisite
+              viennoiseries crafted with European precision and American
+              innovation.
             </p>
-            <a routerLink="/menu" class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm">
+            <a
+              routerLink="/menu"
+              class="inline-flex items-center text-brand-gold hover:text-white transition-colors duration-300 font-medium uppercase tracking-wide text-sm"
+            >
               Pastry Collection
-              <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              <svg
+                class="w-4 h-4 ml-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
               </svg>
             </a>
           </div>
@@ -216,52 +396,104 @@ import { RouterLink } from '@angular/router';
           <h2 class="section-title">Visit Our Berkeley Heights Location</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle max-w-3xl mx-auto">
-            Located in the heart of Berkeley Heights, we welcome you to experience artisan quality in an atmosphere of refined comfort.
+            Located in the heart of Berkeley Heights, we welcome you to
+            experience artisan quality in an atmosphere of refined comfort.
           </p>
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div class="animate-slide-up">
             <div class="space-y-8">
               <div class="flex items-start space-x-6">
-                <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0">
-                  <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                <div
+                  class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-7 h-7 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">Address</h3>
-                  <a href="https://maps.google.com/?q=512+Springfield+Ave,+Berkeley+Heights,+NJ"
-                     target="_blank"
-                     class="text-elegant-stone hover:text-brand-gold transition-colors duration-300 font-elegant text-lg leading-relaxed">
-                    512 Springfield Avenue<br>
+                  <h3
+                    class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                  >
+                    Address
+                  </h3>
+                  <a
+                    href="https://maps.google.com/?q=512+Springfield+Ave,+Berkeley+Heights,+NJ"
+                    target="_blank"
+                    class="text-elegant-stone hover:text-brand-gold transition-colors duration-300 font-elegant text-lg leading-relaxed"
+                  >
+                    512 Springfield Avenue<br />
                     Berkeley Heights, New Jersey
                   </a>
                 </div>
               </div>
               <div class="flex items-start space-x-6">
-                <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0">
-                  <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                <div
+                  class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-7 h-7 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">Hours</h3>
-                  <p class="text-elegant-stone font-elegant text-lg">Daily: 7:00 AM – 6:00 PM</p>
-                  <p class="text-elegant-stone/70 text-sm mt-1">Fresh baking begins at 5:00 AM</p>
+                  <h3
+                    class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                  >
+                    Hours
+                  </h3>
+                  <p class="text-elegant-stone font-elegant text-lg">
+                    Daily: 7:00 AM – 6:00 PM
+                  </p>
+                  <p class="text-elegant-stone/70 text-sm mt-1">
+                    Fresh baking begins at 5:00 AM
+                  </p>
                 </div>
               </div>
               <div class="flex items-start space-x-6">
-                <div class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0">
-                  <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                <div
+                  class="w-14 h-14 bg-gradient-to-br from-brand-gold to-brand-bronze flex items-center justify-center flex-shrink-0"
+                >
+                  <svg
+                    class="w-7 h-7 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                    />
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">Phone</h3>
-                  <a href="tel:908-933-0123" class="text-elegant-stone hover:text-brand-gold transition-colors duration-300 font-elegant text-lg">
+                  <h3
+                    class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                  >
+                    Phone
+                  </h3>
+                  <a
+                    href="tel:908-933-0123"
+                    class="text-elegant-stone hover:text-brand-gold transition-colors duration-300 font-elegant text-lg"
+                  >
                     (908) 933-0123
                   </a>
-                  <p class="text-elegant-stone/70 text-sm mt-1">Call ahead for special orders</p>
+                  <p class="text-elegant-stone/70 text-sm mt-1">
+                    Call ahead for special orders
+                  </p>
                 </div>
               </div>
             </div>
@@ -269,15 +501,35 @@ import { RouterLink } from '@angular/router';
               <div class="flex flex-col sm:flex-row gap-4">
                 <a routerLink="/contact" class="btn-primary">
                   Contact Information
-                  <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  <svg
+                    class="w-5 h-5 inline ml-2"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
                   </svg>
                 </a>
-                <a href="https://maps.google.com/?q=512+Springfield+Ave,+Berkeley+Heights,+NJ"
-                   target="_blank"
-                   class="btn-secondary">
-                  <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                <a
+                  href="https://maps.google.com/?q=512+Springfield+Ave,+Berkeley+Heights,+NJ"
+                  target="_blank"
+                  class="btn-secondary"
+                >
+                  <svg
+                    class="w-5 h-5 inline mr-2"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                      clip-rule="evenodd"
+                    />
                   </svg>
                   Directions
                 </a>
@@ -291,7 +543,8 @@ import { RouterLink } from '@angular/router';
                 class="w-full h-full border-0"
                 allowfullscreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
+                referrerpolicy="no-referrer-when-downgrade"
+              >
               </iframe>
             </div>
           </div>
@@ -300,31 +553,48 @@ import { RouterLink } from '@angular/router';
     </section>
 
     <!-- CTA Section -->
-    <section class="section-padding luxury-bg text-white relative overflow-hidden">
+    <section
+      class="section-padding luxury-bg text-white relative overflow-hidden"
+    >
       <!-- Background pattern -->
       <div class="absolute inset-0 opacity-10">
-        <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23ffffff&quot; fill-opacity=&quot;0.1&quot;><circle cx=&quot;30&quot; cy=&quot;30&quot; r=&quot;2&quot;/></g></svg>');"></div>
+        <div
+          class="absolute inset-0"
+          style='background-image: url(&apos;data:image/svg+xml,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.1"><circle cx="30" cy="30" r="2"/></g></svg>&apos;);'
+        ></div>
       </div>
 
       <div class="container-custom text-center relative z-10">
         <div class="animate-slide-up">
-          <h2 class="text-4xl md:text-5xl font-display font-bold mb-8 text-white">Experience Excellence</h2>
+          <h2
+            class="text-4xl md:text-5xl font-display font-bold mb-8 text-white"
+          >
+            Experience Excellence
+          </h2>
           <div class="divider-elegant mb-8"></div>
-          <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-elegant-pearl font-elegant leading-relaxed">
-            Join Berkeley Heights' discerning community in celebrating artisan tradition,
-            exceptional coffee, and the art of fine patisserie.
+          <p
+            class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-elegant-pearl font-elegant leading-relaxed"
+          >
+            Join Berkeley Heights' discerning community in celebrating artisan
+            tradition, exceptional coffee, and the art of fine patisserie.
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center">
-            <a routerLink="/catering" class="bg-white text-elegant-charcoal hover:bg-elegant-pearl font-semibold py-4 px-8 transition-all duration-500 shadow-luxury hover:shadow-2xl uppercase tracking-wider text-sm">
+            <a
+              routerLink="/catering"
+              class="bg-white text-elegant-charcoal hover:bg-elegant-pearl font-semibold py-4 px-8 transition-all duration-500 shadow-luxury hover:shadow-2xl uppercase tracking-wider text-sm"
+            >
               Catering Excellence
             </a>
-            <a href="tel:908-933-0123" class="border-2 border-white hover:bg-white hover:text-elegant-charcoal font-semibold py-4 px-8 transition-all duration-500 uppercase tracking-wider text-sm">
+            <a
+              href="tel:908-933-0123"
+              class="border-2 border-white hover:bg-white hover:text-elegant-charcoal font-semibold py-4 px-8 transition-all duration-500 uppercase tracking-wider text-sm"
+            >
               Call (908) 933-0123
             </a>
           </div>
         </div>
       </div>
     </section>
-  `
+  `,
 })
 export class HomeComponent {}

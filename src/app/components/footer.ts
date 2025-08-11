@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
+import { Component } from "@angular/core";
+import { RouterLink } from "@angular/router";
 
 @Component({
-  selector: 'app-footer',
+  selector: "app-footer",
   standalone: true,
   imports: [RouterLink],
   template: `
@@ -119,7 +119,7 @@ import { RouterLink } from '@angular/router';
         </div>
       </div>
     </footer>
-  `
+  `,
 })
 export class FooterComponent {
   currentYear = new Date().getFullYear();
