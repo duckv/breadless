@@ -67,7 +67,7 @@ import { CommonModule } from "@angular/common";
               class="nav-link"
               >Contact</a
             >
-            <a href="tel:908-933-0123" class="btn-primary ml-6">
+            <a href="https://lh.shift4.com/sign-in" class="btn-primary ml-6">
               <svg
                 class="w-4 h-4 inline mr-2"
                 fill="currentColor"
@@ -154,7 +154,7 @@ import { CommonModule } from "@angular/common";
               >Contact</a
             >
             <a
-              href="tel:908-933-0123"
+              href="https://lh.shift4.com/sign-in"
               class="btn-primary text-center mt-6 mx-4"
             >
               <svg
