@@ -15,7 +15,8 @@ import { RouterLink } from "@angular/router";
           class="subtitle text-elegant-pearl max-w-3xl mx-auto animate-fade-in"
         >
           Discover the story behind Berkeley Heights' beloved artisan bakery and
-          the passionate vision that brings you freshly baked excellence every day.
+          the passionate vision that brings you freshly baked excellence every
+          day.
         </p>
       </div>
     </section>
@@ -30,35 +31,44 @@ import { RouterLink } from "@angular/router";
                 Meet Our Founder
               </h2>
               <div class="divider-elegant mb-8 mx-auto lg:mx-0"></div>
-              
-              <div class="space-y-6 text-lg font-elegant leading-relaxed text-elegant-stone">
+
+              <div
+                class="space-y-6 text-lg font-elegant leading-relaxed text-elegant-stone"
+              >
                 <p>
-                  <strong class="text-elegant-charcoal font-display text-xl">Nally Sadri</strong> 
-                  founded Bread N' Brew with a simple yet profound vision: to bring the authentic taste 
-                  of European artisan baking to the heart of Berkeley Heights.
+                  <strong class="text-elegant-charcoal font-display text-xl"
+                    >Nally Sadri</strong
+                  >
+                  founded Bread N' Brew with a simple yet profound vision: to
+                  bring the authentic taste of European artisan baking to the
+                  heart of Berkeley Heights.
                 </p>
-                
+
                 <p>
-                  With over 15 years of experience in French patisserie and a deep passion for 
-                  coffee culture, Nally trained under master bakers in Lyon and Paris before 
-                  bringing her expertise to New Jersey. Her commitment to traditional techniques 
-                  and the finest ingredients ensures every croissant, every loaf, and every cup 
-                  meets the highest standards of excellence.
+                  With over 15 years of experience in French patisserie and a
+                  deep passion for coffee culture, Nally trained under master
+                  bakers in Lyon and Paris before bringing her expertise to New
+                  Jersey. Her commitment to traditional techniques and the
+                  finest ingredients ensures every croissant, every loaf, and
+                  every cup meets the highest standards of excellence.
                 </p>
-                
+
                 <p>
-                  "I believe that great food brings people together," says Nally. "Every morning, 
-                  when I see our customers start their day with our fresh pastries and perfectly 
-                  brewed coffee, I know we're not just serving food – we're creating moments of joy."
+                  "I believe that great food brings people together," says
+                  Nally. "Every morning, when I see our customers start their
+                  day with our fresh pastries and perfectly brewed coffee, I
+                  know we're not just serving food – we're creating moments of
+                  joy."
                 </p>
-                
+
                 <p>
-                  Under Nally's leadership, Bread N' Brew has become more than a bakery – it's a 
-                  cornerstone of the Berkeley Heights community, where neighbors become friends 
-                  over shared tables and the aroma of fresh-baked bread.
+                  Under Nally's leadership, Bread N' Brew has become more than a
+                  bakery – it's a cornerstone of the Berkeley Heights community,
+                  where neighbors become friends over shared tables and the
+                  aroma of fresh-baked bread.
                 </p>
               </div>
-              
+
               <div class="mt-8">
                 <a routerLink="/contact" class="btn-primary">
                   Get in Touch
@@ -79,7 +89,7 @@ import { RouterLink } from "@angular/router";
               </div>
             </div>
           </div>
-          
+
           <div class="animate-fade-in">
             <div class="relative">
               <div
@@ -93,7 +103,9 @@ import { RouterLink } from "@angular/router";
                 />
                 <div class="absolute bottom-6 left-6 right-6">
                   <div class="bg-white/90 backdrop-blur-sm p-4">
-                    <h3 class="font-display font-bold text-xl text-elegant-charcoal">
+                    <h3
+                      class="font-display font-bold text-xl text-elegant-charcoal"
+                    >
                       Nally Sadri
                     </h3>
                     <p class="text-elegant-stone font-elegant">
@@ -115,11 +127,11 @@ import { RouterLink } from "@angular/router";
           <h2 class="section-title text-white">Our Core Values</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle text-elegant-pearl max-w-3xl mx-auto">
-            The principles that guide everything we do, from the first rise of our dough 
-            to the last sip of your coffee.
+            The principles that guide everything we do, from the first rise of
+            our dough to the last sip of your coffee.
           </p>
         </div>
-        
+
         <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div class="text-center animate-slide-up">
             <div
@@ -139,11 +151,11 @@ import { RouterLink } from "@angular/router";
               Artisan Excellence
             </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed">
-              We never compromise on quality. Every product is handcrafted using 
+              We never compromise on quality. Every product is handcrafted using
               traditional techniques and the finest ingredients available.
             </p>
           </div>
-          
+
           <div class="text-center animate-slide-up">
             <div
               class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center"
@@ -164,11 +176,11 @@ import { RouterLink } from "@angular/router";
               Community First
             </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed">
-              We're proud to be part of Berkeley Heights. Our success is measured 
-              by the smiles we create and the community we serve.
+              We're proud to be part of Berkeley Heights. Our success is
+              measured by the smiles we create and the community we serve.
             </p>
           </div>
-          
+
           <div class="text-center animate-slide-up">
             <div
               class="w-20 h-20 bg-gradient-to-br from-brand-gold to-brand-bronze mx-auto mb-8 flex items-center justify-center"
@@ -189,7 +201,7 @@ import { RouterLink } from "@angular/router";
               Sustainable Practices
             </h3>
             <p class="text-elegant-pearl font-elegant leading-relaxed">
-              We source responsibly, minimize waste, and support local suppliers 
+              We source responsibly, minimize waste, and support local suppliers
               whenever possible, caring for our planet as much as our pastries.
             </p>
           </div>
@@ -204,69 +216,89 @@ import { RouterLink } from "@angular/router";
           <h2 class="section-title">Our Journey</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle max-w-3xl mx-auto">
-            From dream to reality – the milestones that shaped Bread N' Brew into 
-            Berkeley Heights' premier artisan bakery.
+            From dream to reality – the milestones that shaped Bread N' Brew
+            into Berkeley Heights' premier artisan bakery.
           </p>
         </div>
-        
+
         <div class="max-w-4xl mx-auto">
           <div class="space-y-12">
             <div class="flex items-center animate-slide-up">
-              <div class="flex-shrink-0 w-24 h-24 bg-brand-gold flex items-center justify-center text-white font-display font-bold text-xl">
+              <div
+                class="flex-shrink-0 w-24 h-24 bg-brand-gold flex items-center justify-center text-white font-display font-bold text-xl"
+              >
                 2018
               </div>
               <div class="ml-8">
-                <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">
+                <h3
+                  class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                >
                   The Dream Begins
                 </h3>
                 <p class="text-elegant-stone font-elegant">
-                  Nally Sadri completes her advanced training in French patisserie in Lyon, 
-                  France, and begins planning her vision for an authentic artisan bakery in New Jersey.
+                  Nally Sadri completes her advanced training in French
+                  patisserie in Lyon, France, and begins planning her vision for
+                  an authentic artisan bakery in New Jersey.
                 </p>
               </div>
             </div>
-            
+
             <div class="flex items-center animate-slide-up">
-              <div class="flex-shrink-0 w-24 h-24 bg-brand-bronze flex items-center justify-center text-white font-display font-bold text-xl">
+              <div
+                class="flex-shrink-0 w-24 h-24 bg-brand-bronze flex items-center justify-center text-white font-display font-bold text-xl"
+              >
                 2020
               </div>
               <div class="ml-8">
-                <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">
+                <h3
+                  class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                >
                   Finding Home
                 </h3>
                 <p class="text-elegant-stone font-elegant">
-                  After extensive searching, the perfect location in Berkeley Heights is found. 
-                  Renovation begins to create the warm, welcoming space our customers love today.
+                  After extensive searching, the perfect location in Berkeley
+                  Heights is found. Renovation begins to create the warm,
+                  welcoming space our customers love today.
                 </p>
               </div>
             </div>
-            
+
             <div class="flex items-center animate-slide-up">
-              <div class="flex-shrink-0 w-24 h-24 bg-brand-gold flex items-center justify-center text-white font-display font-bold text-xl">
+              <div
+                class="flex-shrink-0 w-24 h-24 bg-brand-gold flex items-center justify-center text-white font-display font-bold text-xl"
+              >
                 2021
               </div>
               <div class="ml-8">
-                <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">
+                <h3
+                  class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                >
                   Grand Opening
                 </h3>
                 <p class="text-elegant-stone font-elegant">
-                  Bread N' Brew opens its doors to Berkeley Heights, immediately becoming 
-                  a beloved gathering place for coffee lovers and pastry enthusiasts.
+                  Bread N' Brew opens its doors to Berkeley Heights, immediately
+                  becoming a beloved gathering place for coffee lovers and
+                  pastry enthusiasts.
                 </p>
               </div>
             </div>
-            
+
             <div class="flex items-center animate-slide-up">
-              <div class="flex-shrink-0 w-24 h-24 bg-brand-bronze flex items-center justify-center text-white font-display font-bold text-xl">
+              <div
+                class="flex-shrink-0 w-24 h-24 bg-brand-bronze flex items-center justify-center text-white font-display font-bold text-xl"
+              >
                 2024
               </div>
               <div class="ml-8">
-                <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-2">
+                <h3
+                  class="font-display font-bold text-xl text-elegant-charcoal mb-2"
+                >
                   Community Cornerstone
                 </h3>
                 <p class="text-elegant-stone font-elegant">
-                  Today, Bread N' Brew serves hundreds of loyal customers weekly, 
-                  expanding our menu and continuing to perfect the art of artisan baking.
+                  Today, Bread N' Brew serves hundreds of loyal customers
+                  weekly, expanding our menu and continuing to perfect the art
+                  of artisan baking.
                 </p>
               </div>
             </div>
@@ -288,8 +320,8 @@ import { RouterLink } from "@angular/router";
           <p
             class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-elegant-pearl font-elegant leading-relaxed"
           >
-            Experience the passion and dedication that goes into every croissant, 
-            every loaf, and every perfectly brewed cup of coffee.
+            Experience the passion and dedication that goes into every
+            croissant, every loaf, and every perfectly brewed cup of coffee.
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center">
             <a

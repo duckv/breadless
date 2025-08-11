@@ -14,8 +14,8 @@ import { RouterLink } from "@angular/router";
         <p
           class="subtitle text-elegant-pearl max-w-3xl mx-auto animate-fade-in"
         >
-          Elevate your special occasions with Bread N' Brew's artisan catering. 
-          From intimate gatherings to corporate events, we deliver the same 
+          Elevate your special occasions with Bread N' Brew's artisan catering.
+          From intimate gatherings to corporate events, we deliver the same
           exceptional quality that defines our bakery.
         </p>
       </div>
@@ -34,17 +34,17 @@ import { RouterLink } from "@angular/router";
                 fill="currentColor"
                 viewBox="0 0 20 20"
               >
-                <path
-                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                />
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
             </div>
-            <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-4">
+            <h3
+              class="font-display font-bold text-xl text-elegant-charcoal mb-4"
+            >
               Corporate Events
             </h3>
             <p class="text-elegant-stone font-elegant">
-              Professional breakfast and lunch catering for meetings, conferences, 
-              and office celebrations with elegant presentation.
+              Professional breakfast and lunch catering for meetings,
+              conferences, and office celebrations with elegant presentation.
             </p>
           </div>
 
@@ -64,11 +64,13 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-4">
+            <h3
+              class="font-display font-bold text-xl text-elegant-charcoal mb-4"
+            >
               Special Occasions
             </h3>
             <p class="text-elegant-stone font-elegant">
-              Birthdays, anniversaries, celebrations, and family gatherings 
+              Birthdays, anniversaries, celebrations, and family gatherings
               deserve our finest pastries and artisan breads.
             </p>
           </div>
@@ -87,12 +89,14 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h3 class="font-display font-bold text-xl text-elegant-charcoal mb-4">
+            <h3
+              class="font-display font-bold text-xl text-elegant-charcoal mb-4"
+            >
               Private Parties
             </h3>
             <p class="text-elegant-stone font-elegant">
-              Intimate dinner parties, wine tastings, and exclusive events 
-              with custom menu planning and personalized service.
+              Intimate dinner parties, wine tastings, and exclusive events with
+              custom menu planning and personalized service.
             </p>
           </div>
         </div>
@@ -106,8 +110,8 @@ import { RouterLink } from "@angular/router";
           <h2 class="section-title text-white">Catering Menu</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle text-elegant-pearl max-w-3xl mx-auto">
-            All items are prepared fresh to order. Minimum order quantities apply. 
-            48-hour advance notice recommended for large orders.
+            All items are prepared fresh to order. Minimum order quantities
+            apply. 48-hour advance notice recommended for large orders.
           </p>
         </div>
 
@@ -117,7 +121,7 @@ import { RouterLink } from "@angular/router";
             <h3 class="text-3xl font-display font-bold mb-8 text-white">
               Breakfast Catering
             </h3>
-            
+
             <div class="space-y-6">
               <div class="border-b border-white/20 pb-4">
                 <div class="flex justify-between items-start mb-2">
@@ -127,8 +131,9 @@ import { RouterLink } from "@angular/router";
                   <span class="text-brand-gold font-medium">From $45</span>
                 </div>
                 <p class="text-elegant-pearl text-sm">
-                  Assorted croissants, pain au chocolat, danishes, and seasonal pastries
-                  <br><em>Serves 8-10 people | Minimum order: 2 dozen</em>
+                  Assorted croissants, pain au chocolat, danishes, and seasonal
+                  pastries
+                  <br /><em>Serves 8-10 people | Minimum order: 2 dozen</em>
                 </p>
               </div>
 
@@ -140,8 +145,9 @@ import { RouterLink } from "@angular/router";
                   <span class="text-brand-gold font-medium">$12/person</span>
                 </div>
                 <p class="text-elegant-pearl text-sm">
-                  Fresh bagels, cream cheese, butter, seasonal fruit, and premium coffee service
-                  <br><em>Minimum 15 people</em>
+                  Fresh bagels, cream cheese, butter, seasonal fruit, and
+                  premium coffee service
+                  <br /><em>Minimum 15 people</em>
                 </p>
               </div>
 
@@ -153,9 +159,9 @@ import { RouterLink } from "@angular/router";
                   <span class="text-brand-gold font-medium">$18/person</span>
                 </div>
                 <p class="text-elegant-pearl text-sm">
-                  Artisan pastry selection, fresh fruit salad, yogurt parfaits, 
+                  Artisan pastry selection, fresh fruit salad, yogurt parfaits,
                   premium coffee, and fresh juice
-                  <br><em>Minimum 20 people</em>
+                  <br /><em>Minimum 20 people</em>
                 </p>
               </div>
 
@@ -168,7 +174,9 @@ import { RouterLink } from "@angular/router";
                 </div>
                 <p class="text-elegant-pearl text-sm">
                   Premium coffee, assorted teas, cream, sugar, and stirrers
-                  <br><em>Thermal carafes included for events over 25 people</em>
+                  <br /><em
+                    >Thermal carafes included for events over 25 people</em
+                  >
                 </p>
               </div>
             </div>
@@ -179,7 +187,7 @@ import { RouterLink } from "@angular/router";
             <h3 class="text-3xl font-display font-bold mb-8 text-white">
               Lunch & Events
             </h3>
-            
+
             <div class="space-y-6">
               <div class="border-b border-white/20 pb-4">
                 <div class="flex justify-between items-start mb-2">
@@ -189,9 +197,9 @@ import { RouterLink } from "@angular/router";
                   <span class="text-brand-gold font-medium">$95/dozen</span>
                 </div>
                 <p class="text-elegant-pearl text-sm">
-                  Selection of our signature sandwiches cut in halves, including 
+                  Selection of our signature sandwiches cut in halves, including
                   Parisian Ham & Brie, Chicken Salad, and Mediterranean
-                  <br><em>Minimum 2 dozen</em>
+                  <br /><em>Minimum 2 dozen</em>
                 </p>
               </div>
 
@@ -204,7 +212,7 @@ import { RouterLink } from "@angular/router";
                 </div>
                 <p class="text-elegant-pearl text-sm">
                   Large serving bowls of Caesar, Spinach, or Mixed Green salads
-                  <br><em>Serves 8-10 people | Dressing on the side</em>
+                  <br /><em>Serves 8-10 people | Dressing on the side</em>
                 </p>
               </div>
 
@@ -216,9 +224,9 @@ import { RouterLink } from "@angular/router";
                   <span class="text-brand-gold font-medium">$25/loaf</span>
                 </div>
                 <p class="text-elegant-pearl text-sm">
-                  Freshly baked sourdough, multi-grain, or seasonal bread with 
+                  Freshly baked sourdough, multi-grain, or seasonal bread with
                   European butter and olive oil
-                  <br><em>Sliced and presentation-ready</em>
+                  <br /><em>Sliced and presentation-ready</em>
                 </p>
               </div>
 
@@ -231,7 +239,9 @@ import { RouterLink } from "@angular/router";
                 </div>
                 <p class="text-elegant-pearl text-sm">
                   Seasonal tarts, mini pastries, and signature desserts
-                  <br><em>Custom arrangements available | 48-hour notice required</em>
+                  <br /><em
+                    >Custom arrangements available | 48-hour notice required</em
+                  >
                 </p>
               </div>
             </div>
@@ -247,8 +257,8 @@ import { RouterLink } from "@angular/router";
           <h2 class="section-title">Custom Catering Options</h2>
           <div class="divider-elegant mb-8"></div>
           <p class="subtitle max-w-3xl mx-auto">
-            We work with you to create the perfect menu for your event. 
-            All dietary restrictions and special requests are accommodated.
+            We work with you to create the perfect menu for your event. All
+            dietary restrictions and special requests are accommodated.
           </p>
         </div>
 
@@ -267,7 +277,9 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h4 class="font-display font-semibold text-lg text-elegant-charcoal mb-2">
+            <h4
+              class="font-display font-semibold text-lg text-elegant-charcoal mb-2"
+            >
               Gluten-Free Options
             </h4>
             <p class="text-elegant-stone text-sm">
@@ -291,7 +303,9 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h4 class="font-display font-semibold text-lg text-elegant-charcoal mb-2">
+            <h4
+              class="font-display font-semibold text-lg text-elegant-charcoal mb-2"
+            >
               Event Planning
             </h4>
             <p class="text-elegant-stone text-sm">
@@ -316,11 +330,14 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h4 class="font-display font-semibold text-lg text-elegant-charcoal mb-2">
+            <h4
+              class="font-display font-semibold text-lg text-elegant-charcoal mb-2"
+            >
               Delivery Service
             </h4>
             <p class="text-elegant-stone text-sm">
-              Professional delivery and setup within 15 miles of Berkeley Heights
+              Professional delivery and setup within 15 miles of Berkeley
+              Heights
             </p>
           </div>
 
@@ -340,7 +357,9 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </div>
-            <h4 class="font-display font-semibold text-lg text-elegant-charcoal mb-2">
+            <h4
+              class="font-display font-semibold text-lg text-elegant-charcoal mb-2"
+            >
               Custom Branding
             </h4>
             <p class="text-elegant-stone text-sm">
@@ -364,26 +383,36 @@ import { RouterLink } from "@angular/router";
             <div class="mb-4">
               <div class="flex text-brand-gold">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
               </div>
             </div>
             <p class="text-elegant-pearl font-elegant mb-4">
-              "Bread N' Brew catered our corporate breakfast and it was absolutely 
-              perfect. The pastries were fresh, the presentation was elegant, and 
-              our clients were thoroughly impressed."
+              "Bread N' Brew catered our corporate breakfast and it was
+              absolutely perfect. The pastries were fresh, the presentation was
+              elegant, and our clients were thoroughly impressed."
             </p>
             <div class="font-display font-semibold text-white">
               Sarah M., Event Coordinator
@@ -394,25 +423,35 @@ import { RouterLink } from "@angular/router";
             <div class="mb-4">
               <div class="flex text-brand-gold">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
               </div>
             </div>
             <p class="text-elegant-pearl font-elegant mb-4">
-              "The custom dessert platter for my daughter's graduation party was 
-              stunning. Every guest complimented the beautiful presentation and 
+              "The custom dessert platter for my daughter's graduation party was
+              stunning. Every guest complimented the beautiful presentation and
               incredible taste. Thank you for making it special!"
             </p>
             <div class="font-display font-semibold text-white">
@@ -424,26 +463,37 @@ import { RouterLink } from "@angular/router";
             <div class="mb-4">
               <div class="flex text-brand-gold">
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  <path
+                    d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
+                  />
                 </svg>
               </div>
             </div>
             <p class="text-elegant-pearl font-elegant mb-4">
-              "Professional, reliable, and delicious. Our weekly office breakfast 
-              deliveries are always on time and the quality never varies. 
-              Bread N' Brew has become an essential part of our team meetings."
+              "Professional, reliable, and delicious. Our weekly office
+              breakfast deliveries are always on time and the quality never
+              varies. Bread N' Brew has become an essential part of our team
+              meetings."
             </p>
             <div class="font-display font-semibold text-white">
               Jennifer L., HR Director
@@ -457,19 +507,21 @@ import { RouterLink } from "@angular/router";
     <section class="section-padding gradient-bg">
       <div class="container-custom text-center">
         <div class="animate-slide-up">
-          <h2 class="text-4xl md:text-5xl font-display font-bold text-elegant-charcoal mb-8">
+          <h2
+            class="text-4xl md:text-5xl font-display font-bold text-elegant-charcoal mb-8"
+          >
             Ready to Plan Your Event?
           </h2>
           <div class="divider-elegant mb-8"></div>
-          <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-elegant-stone font-elegant leading-relaxed">
-            Let us help make your next event unforgettable with our artisan catering services. 
-            Contact us today for a custom quote and menu consultation.
+          <p
+            class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto text-elegant-stone font-elegant leading-relaxed"
+          >
+            Let us help make your next event unforgettable with our artisan
+            catering services. Contact us today for a custom quote and menu
+            consultation.
           </p>
           <div class="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <a
-              routerLink="/contact"
-              class="btn-primary"
-            >
+            <a routerLink="/contact" class="btn-primary">
               Request Quote
               <svg
                 class="w-5 h-5 inline ml-2"
@@ -485,10 +537,7 @@ import { RouterLink } from "@angular/router";
                 />
               </svg>
             </a>
-            <a
-              href="tel:908-933-0123"
-              class="btn-secondary"
-            >
+            <a href="tel:908-933-0123" class="btn-secondary">
               <svg
                 class="w-5 h-5 inline mr-2"
                 fill="currentColor"
@@ -501,15 +550,21 @@ import { RouterLink } from "@angular/router";
               Call (908) 933-0123
             </a>
           </div>
-          
-          <div class="bg-elegant-pearl border border-brand-gold/20 p-6 max-w-2xl mx-auto">
-            <h4 class="font-display font-bold text-lg text-elegant-charcoal mb-2">
+
+          <div
+            class="bg-elegant-pearl border border-brand-gold/20 p-6 max-w-2xl mx-auto"
+          >
+            <h4
+              class="font-display font-bold text-lg text-elegant-charcoal mb-2"
+            >
               Planning Guidelines
             </h4>
             <p class="text-elegant-stone text-sm">
-              <strong>48-hour notice</strong> recommended for orders over $200<br>
-              <strong>One week notice</strong> required for custom menu items<br>
-              <strong>Delivery available</strong> within 15 miles • Setup services available<br>
+              <strong>48-hour notice</strong> recommended for orders over
+              $200<br />
+              <strong>One week notice</strong> required for custom menu items<br />
+              <strong>Delivery available</strong> within 15 miles • Setup
+              services available<br />
               All dietary restrictions accommodated with advance notice
             </p>
           </div>

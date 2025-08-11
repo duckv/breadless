@@ -15,13 +15,11 @@ import { CommonModule } from "@angular/common";
             <a routerLink="/" class="flex items-center space-x-4">
               <div class="flex flex-col">
                 <div class="flex items-center space-x-1">
-                  <span
-                    class="text-3xl font-display font-bold text-pink-500"
+                  <span class="text-3xl font-display font-bold text-pink-500"
                     >Bread N' Br</span
                   >
                   <span class="text-2xl text-pink-500">☕︎</span>
-                  <span
-                    class="text-3xl font-display font-bold text-pink-500"
+                  <span class="text-3xl font-display font-bold text-pink-500"
                     >w</span
                   >
                 </div>
@@ -67,7 +65,11 @@ import { CommonModule } from "@angular/common";
               class="nav-link"
               >Contact</a
             >
-            <a href="https://lh.shift4.com/sign-in" target="_blank" class="btn-primary ml-6">
+            <a
+              href="https://lh.shift4.com/sign-in"
+              target="_blank"
+              class="btn-primary ml-6"
+            >
               <svg
                 class="w-4 h-4 inline mr-2"
                 fill="currentColor"
@@ -154,7 +156,8 @@ import { CommonModule } from "@angular/common";
               >Contact</a
             >
             <a
-              href="https://lh.shift4.com/sign-in"\n              target="_blank"
+              href="https://lh.shift4.com/sign-in"
+              target="_blank"
               class="btn-primary text-center mt-6 mx-4"
             >
               <svg

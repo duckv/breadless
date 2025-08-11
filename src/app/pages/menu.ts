@@ -19,7 +19,9 @@ import { CommonModule } from "@angular/common";
         </p>
 
         <!-- Print & Export Options -->
-        <div class="flex flex-col sm:flex-row gap-4 justify-center mt-8 no-print">
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center mt-8 no-print"
+        >
           <button
             (click)="printMenu()"
             class="bg-white/20 hover:bg-white/30 text-white border border-white/30 hover:border-white/50 px-6 py-3 transition-all duration-300 font-medium"
@@ -689,7 +691,6 @@ import { CommonModule } from "@angular/common";
   `,
 })
 export class MenuComponent {
-
   printMenu() {
     // Add print-specific styles
     const printStyles = `
@@ -710,8 +711,9 @@ export class MenuComponent {
     `;
 
     // Create printable content
-    const printContent = document.querySelector('.menu-content')?.innerHTML || '';
-    const printWindow = window.open('', '_blank');
+    const printContent =
+      document.querySelector(".menu-content")?.innerHTML || "";
+    const printWindow = window.open("", "_blank");
 
     if (printWindow) {
       printWindow.document.write(`
@@ -752,11 +754,11 @@ export class MenuComponent {
 
   exportToText() {
     const menuText = this.generateMenuText();
-    const blob = new Blob([menuText], { type: 'text/plain' });
+    const blob = new Blob([menuText], { type: "text/plain" });
     const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
+    const a = document.createElement("a");
     a.href = url;
-    a.download = 'bread-n-brew-menu.txt';
+    a.download = "bread-n-brew-menu.txt";
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
