@@ -7,39 +7,70 @@ import { RouterLink } from '@angular/router';
   imports: [RouterLink],
   template: `
     <!-- Hero Section -->
-    <section class="gradient-bg min-h-screen flex items-center">
-      <div class="container-custom">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div class="animate-slide-up">
-            <h1 class="hero-text mb-6">
-              Welcome to <span class="text-brand-primary">Bread N' Brew</span>
-            </h1>
-            <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-              Berkeley Heights' premier destination for artisanal breads, fresh pastries, 
-              and expertly crafted coffee. Where tradition meets innovation, 
-              one perfect bite at a time.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <a routerLink="/menu" class="btn-primary text-center">
-                Explore Our Menu
-                <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                </svg>
-              </a>
-              <a href="tel:908-933-0123" class="btn-secondary text-center">
-                <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
-                </svg>
-                Call Now
-              </a>
+    <section class="relative min-h-screen">
+      <!-- Background with overlay -->
+      <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
+             alt="Elegant coffee shop interior"
+             class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-elegant-charcoal/80 via-elegant-charcoal/60 to-transparent"></div>
+      </div>
+
+      <!-- Content -->
+      <div class="relative z-10 min-h-screen flex items-center">
+        <div class="container-custom">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="text-white animate-slide-up">
+              <div class="mb-6">
+                <div class="flex items-center space-x-1 mb-2">
+                  <span class="text-5xl md:text-6xl font-display font-bold text-brand-primary">Bread N' Br</span>
+                  <span class="text-4xl md:text-5xl">☕︎</span>
+                  <span class="text-5xl md:text-6xl font-display font-bold text-brand-primary">w</span>
+                </div>
+                <p class="text-sm md:text-base text-elegant-pearl uppercase tracking-widest font-medium ml-1">
+                  Artisan Breads, Perfect Brews, & Fine Patisseries
+                </p>
+              </div>
+              <div class="divider-elegant mb-8"></div>
+              <p class="text-xl md:text-2xl font-elegant leading-relaxed mb-8 text-elegant-pearl">
+                Freshly baked pastries and specialty coffee in the heart of Berkeley Heights.
+                Experience artisan quality with every bite and sip.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-6">
+                <a routerLink="/menu" class="btn-primary text-center">
+                  View Our Menu
+                  <svg class="w-5 h-5 inline ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </a>
+                <a href="tel:908-933-0123" class="btn-secondary text-center border-white text-white hover:bg-white hover:text-elegant-charcoal">
+                  <svg class="w-5 h-5 inline mr-2" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
+                  (908) 933-0123
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="animate-fade-in">
-            <div class="relative">
-              <div class="absolute inset-0 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 rounded-3xl transform rotate-6"></div>
-              <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                   alt="Fresh artisanal bread and coffee" 
-                   class="relative rounded-3xl shadow-2xl w-full h-96 object-cover">
+            <div class="animate-fade-in hidden lg:block">
+              <div class="relative">
+                <div class="absolute -inset-4 bg-gradient-to-r from-brand-gold/30 to-brand-bronze/30 blur-lg"></div>
+                <div class="relative bg-white/10 backdrop-blur-sm border border-white/20 p-8">
+                  <div class="grid grid-cols-2 gap-6">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                         alt="Artisan bread"
+                         class="w-full h-32 object-cover">
+                    <img src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                         alt="Specialty coffee"
+                         class="w-full h-32 object-cover">
+                    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                         alt="Fresh pastries"
+                         class="w-full h-32 object-cover">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                         alt="Coffee preparation"
+                         class="w-full h-32 object-cover">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
