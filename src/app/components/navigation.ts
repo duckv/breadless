@@ -19,7 +19,7 @@ import { CommonModule } from "@angular/common";
                     class="text-3xl font-display font-bold text-pink-500"
                     >Bread N' Br</span
                   >
-                  <span class="text-2xl">☕︎</span>
+                  <span class="text-2xl text-pink-500">☕︎</span>
                   <span
                     class="text-3xl font-display font-bold text-pink-500"
                     >w</span
