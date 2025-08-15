@@ -1,163 +1,165 @@
 /* Base styles */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Inter', system-ui, sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 /* Custom component styles */
 .btn-primary {
-    @apply bg-gradient-to-r from-brand-gold to-brand-bronze hover:from-brand-bronze hover:to-brand-gold text-white font-semibold py-4 px-8 transition-all duration-500 shadow-elegant hover:shadow-luxury uppercase tracking-wider text-sm;
+  @apply bg-gradient-to-r from-brand-gold to-brand-bronze hover:from-brand-bronze hover:to-brand-gold text-white font-semibold py-4 px-8 transition-all duration-500 shadow-elegant hover:shadow-luxury uppercase tracking-wider text-sm;
 }
 
 .btn-secondary {
-    @apply bg-transparent hover:bg-elegant-pearl text-elegant-charcoal font-semibold py-4 px-8 border border-elegant-charcoal hover:border-brand-gold transition-all duration-500 shadow-soft hover:shadow-elegant uppercase tracking-wider text-sm;
+  @apply bg-transparent hover:bg-elegant-pearl text-elegant-charcoal font-semibold py-4 px-8 border border-elegant-charcoal hover:border-brand-gold transition-all duration-500 shadow-soft hover:shadow-elegant uppercase tracking-wider text-sm;
 }
 
 .btn-elegant {
-    @apply bg-white hover:bg-elegant-pearl text-elegant-charcoal font-medium py-3 px-6 border border-elegant-stone/20 hover:border-brand-gold transition-all duration-300 shadow-soft hover:shadow-elegant;
+  @apply bg-white hover:bg-elegant-pearl text-elegant-charcoal font-medium py-3 px-6 border border-elegant-stone/20 hover:border-brand-gold transition-all duration-300 shadow-soft hover:shadow-elegant;
 }
 
 .card {
-    @apply bg-white shadow-elegant hover:shadow-luxury transition-all duration-500 border border-elegant-stone/10;
+  @apply bg-white shadow-elegant hover:shadow-luxury transition-all duration-500 border border-elegant-stone/10;
 }
 
 .card-luxury {
-    @apply bg-gradient-to-br from-white to-elegant-pearl shadow-luxury border border-brand-gold/20 transition-all duration-500 hover:shadow-2xl;
+  @apply bg-gradient-to-br from-white to-elegant-pearl shadow-luxury border border-brand-gold/20 transition-all duration-500 hover:shadow-2xl;
 }
 
 .section-padding {
-    @apply py-20 md:py-32;
+  @apply py-20 md:py-32;
 }
 
 .container-custom {
-    @apply container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl;
+  @apply container mx-auto px-6 sm:px-8 lg:px-12 max-w-7xl;
 }
 
 .gradient-bg {
-    @apply bg-gradient-to-br from-luxury-100 via-elegant-ivory to-elegant-pearl;
+  @apply bg-gradient-to-br from-luxury-100 via-elegant-ivory to-elegant-pearl;
 }
 
 .luxury-bg {
-    @apply bg-gradient-to-r from-elegant-charcoal via-elegant-slate to-elegant-charcoal;
+  @apply bg-gradient-to-r from-elegant-charcoal via-elegant-slate to-elegant-charcoal;
 }
 
 .text-gradient {
-    @apply bg-gradient-to-r from-brand-gold to-brand-bronze bg-clip-text text-transparent;
+  @apply bg-gradient-to-r from-brand-gold to-brand-bronze bg-clip-text text-transparent;
 }
 
 .text-brand {
-    @apply text-brand-primary font-display font-bold;
+  @apply text-brand-primary font-display font-bold;
 }
 
 .nav-link {
-    @apply text-elegant-charcoal hover:text-brand-gold font-medium transition-all duration-300 relative uppercase tracking-wide text-sm;
+  @apply text-elegant-charcoal hover:text-brand-gold font-medium transition-all duration-300 relative uppercase tracking-wide text-sm;
 }
 
 .nav-link::after {
-    content: "";
-    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-gold transition-all duration-300;
+  content: "";
+  @apply absolute bottom-0 left-0 w-0 h-0.5 bg-brand-gold transition-all duration-300;
 }
 
 .nav-link:hover::after {
-    @apply w-full;
+  @apply w-full;
 }
 
 .nav-link.active {
-    @apply text-brand-gold font-semibold;
+  @apply text-brand-gold font-semibold;
 }
 
 .nav-link.active::after {
-    @apply w-full;
+  @apply w-full;
 }
 
 .hero-text {
-    @apply text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-elegant-charcoal;
+  @apply text-5xl md:text-6xl lg:text-7xl font-display font-bold leading-tight text-elegant-charcoal;
 }
 
 .section-title {
-    @apply text-4xl md:text-5xl font-display font-bold text-center mb-16 text-elegant-charcoal;
+  @apply text-4xl md:text-5xl font-display font-bold text-center mb-16 text-elegant-charcoal;
 }
 
 .subtitle {
-    @apply text-lg md:text-xl font-elegant text-elegant-stone leading-relaxed;
+  @apply text-lg md:text-xl font-elegant text-elegant-stone leading-relaxed;
 }
 
 .menu-category {
-    @apply font-display text-2xl md:text-3xl font-bold text-elegant-charcoal mb-8 pb-2 border-b border-brand-gold/30;
+  @apply font-display text-2xl md:text-3xl font-bold text-elegant-charcoal mb-8 pb-2 border-b border-brand-gold/30;
 }
 
 .menu-item {
-    @apply border-b border-elegant-stone/10 last:border-b-0 py-6 transition-all duration-300 hover:bg-elegant-pearl/30;
+  @apply border-b border-elegant-stone/10 last:border-b-0 py-6 transition-all duration-300 hover:bg-elegant-pearl/30;
 }
 
 .price {
-    @apply font-display font-semibold text-brand-gold text-lg;
+  @apply font-display font-semibold text-brand-gold text-lg;
 }
 
 .divider-elegant {
-    @apply w-24 h-0.5 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto my-8;
+  @apply w-24 h-0.5 bg-gradient-to-r from-transparent via-brand-gold to-transparent mx-auto my-8;
 }
 
 .backdrop-luxury {
-    @apply backdrop-blur-sm bg-white/90 border border-elegant-stone/10;
+  @apply backdrop-blur-sm bg-white/90 border border-elegant-stone/10;
 }
 
 /* Animation classes */
 .animate-slide-up {
-    animation: slideUp 0.8s ease-out;
+  animation: slideUp 0.8s ease-out;
 }
 
 .animate-fade-in {
-    animation: fadeIn 0.8s ease-in-out;
+  animation: fadeIn 0.8s ease-in-out;
 }
 
 .animate-slide-in-right {
-    animation: slideInRight 0.6s ease-out;
+  animation: slideInRight 0.6s ease-out;
 }
 
 /* Hidden class for mobile menu */
 .hidden {
-    display: none;
+  display: none;
 }
 
 /* Print styles */
 @media print {
-    .no-print { 
-        display: none !important; 
-    }
-    .luxury-bg, .gradient-bg { 
-        background: white !important; 
-        color: black !important; 
-    }
-    .text-white { 
-        color: black !important; 
-    }
-    .text-elegant-pearl { 
-        color: #666 !important; 
-    }
-    .card-luxury { 
-        border: 1px solid #ddd !important; 
-        box-shadow: none !important; 
-    }
-    .section-padding { 
-        padding: 20px 0 !important; 
-    }
-    .container-custom { 
-        max-width: 100% !important; 
-        margin: 0 !important; 
-        padding: 0 20px !important; 
-    }
-    body { 
-        font-size: 12pt !important; 
-        line-height: 1.4 !important; 
-    }
-    h1, h2 { 
-        page-break-after: avoid !important; 
-    }
-    .menu-item { 
-        page-break-inside: avoid !important; 
-    }
+  .no-print {
+    display: none !important;
+  }
+  .luxury-bg,
+  .gradient-bg {
+    background: white !important;
+    color: black !important;
+  }
+  .text-white {
+    color: black !important;
+  }
+  .text-elegant-pearl {
+    color: #666 !important;
+  }
+  .card-luxury {
+    border: 1px solid #ddd !important;
+    box-shadow: none !important;
+  }
+  .section-padding {
+    padding: 20px 0 !important;
+  }
+  .container-custom {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 20px !important;
+  }
+  body {
+    font-size: 12pt !important;
+    line-height: 1.4 !important;
+  }
+  h1,
+  h2 {
+    page-break-after: avoid !important;
+  }
+  .menu-item {
+    page-break-inside: avoid !important;
+  }
 }

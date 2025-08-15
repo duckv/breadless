@@ -1,12 +1,12 @@
 // Application state
 const state = {
-    currentPage: 'home',
-    mobileMenuOpen: false
+  currentPage: "home",
+  mobileMenuOpen: false,
 };
 
 // Page content templates
 const pages = {
-    home: `
+  home: `
         <!-- Hero Section -->
         <section class="relative min-h-screen">
             <!-- Background with overlay -->
@@ -267,8 +267,8 @@ const pages = {
             </div>
         </section>
     `,
-    
-    about: `
+
+  about: `
         <!-- Hero Section -->
         <section class="luxury-bg text-white section-padding">
             <div class="container-custom text-center">
@@ -475,7 +475,7 @@ const pages = {
         </section>
     `,
 
-    menu: `
+  menu: `
         <!-- Hero Section -->
         <section class="luxury-bg text-white section-padding">
             <div class="container-custom text-center">
@@ -893,8 +893,8 @@ const pages = {
             </div>
         </section>
     `,
-    
-    catering: `
+
+  catering: `
         <!-- Hero Section -->
         <section class="luxury-bg text-white section-padding">
             <div class="container-custom text-center">
@@ -972,8 +972,8 @@ const pages = {
             </div>
         </section>
     `,
-    
-    contact: `
+
+  contact: `
         <!-- Hero Section -->
         <section class="luxury-bg text-white section-padding">
             <div class="container-custom text-center">
@@ -1090,7 +1090,7 @@ const pages = {
                 </div>
             </div>
         </section>
-    `
+    `,
 };
 
 // Navigation component
@@ -1271,82 +1271,85 @@ const footer = `
 
 // Utility functions
 function navigateTo(page) {
-    state.currentPage = page;
-    renderPage();
-    updateNavigation();
-    closeMobileMenu();
-    
-    // Update URL without page refresh
-    const url = page === 'home' ? '/' : `/${page}`;
-    window.history.pushState({ page }, '', url);
-    
-    // Scroll to top
-    window.scrollTo(0, 0);
+  state.currentPage = page;
+  renderPage();
+  updateNavigation();
+  closeMobileMenu();
+
+  // Update URL without page refresh
+  const url = page === "home" ? "/" : `/${page}`;
+  window.history.pushState({ page }, "", url);
+
+  // Scroll to top
+  window.scrollTo(0, 0);
 }
 
 function toggleMobileMenu() {
-    state.mobileMenuOpen = !state.mobileMenuOpen;
-    const mobileMenu = document.getElementById('mobile-menu');
-    const icon = document.getElementById('mobile-menu-icon');
-    
-    if (state.mobileMenuOpen) {
-        mobileMenu.classList.remove('hidden');
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
-    } else {
-        mobileMenu.classList.add('hidden');
-        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
-    }
+  state.mobileMenuOpen = !state.mobileMenuOpen;
+  const mobileMenu = document.getElementById("mobile-menu");
+  const icon = document.getElementById("mobile-menu-icon");
+
+  if (state.mobileMenuOpen) {
+    mobileMenu.classList.remove("hidden");
+    icon.innerHTML =
+      '<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>';
+  } else {
+    mobileMenu.classList.add("hidden");
+    icon.innerHTML =
+      '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+  }
 }
 
 function closeMobileMenu() {
-    state.mobileMenuOpen = false;
-    const mobileMenu = document.getElementById('mobile-menu');
-    const icon = document.getElementById('mobile-menu-icon');
-    
-    mobileMenu.classList.add('hidden');
-    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
+  state.mobileMenuOpen = false;
+  const mobileMenu = document.getElementById("mobile-menu");
+  const icon = document.getElementById("mobile-menu-icon");
+
+  mobileMenu.classList.add("hidden");
+  icon.innerHTML =
+    '<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>';
 }
 
 function updateNavigation() {
-    // Update active state for navigation links
-    const navLinks = document.querySelectorAll('.nav-link[data-page]');
-    navLinks.forEach(link => {
-        const page = link.getAttribute('data-page');
-        if (page === state.currentPage) {
-            link.classList.add('active');
-        } else {
-            link.classList.remove('active');
-        }
-    });
+  // Update active state for navigation links
+  const navLinks = document.querySelectorAll(".nav-link[data-page]");
+  navLinks.forEach((link) => {
+    const page = link.getAttribute("data-page");
+    if (page === state.currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
+  });
 }
 
 function renderPage() {
-    const navigation = document.getElementById('navigation');
-    const mainContent = document.getElementById('main-content');
-    const footerElement = document.getElementById('footer');
-    
-    // Update title
-    const titles = {
-        home: 'Bread N\' Br☕︎w - Artisan Breads, Perfect Brews, & Fine Patisseries',
-        about: 'About Us - Bread N\' Br☕︎w',
-        menu: 'Our Menu - Bread N\' Br☕︎w',
-        catering: 'Catering Excellence - Bread N\' Br☕︎w',
-        contact: 'Contact Us - Bread N\' Br☕︎w'
-    };
-    document.title = titles[state.currentPage] || titles.home;
-    
-    // Render components
-    navigation.innerHTML = window.navigation;
-    mainContent.innerHTML = pages[state.currentPage] || pages.home;
-    footerElement.innerHTML = footer;
-    
-    // Update navigation state
-    updateNavigation();
+  const navigation = document.getElementById("navigation");
+  const mainContent = document.getElementById("main-content");
+  const footerElement = document.getElementById("footer");
+
+  // Update title
+  const titles = {
+    home: "Bread N' Br☕︎w - Artisan Breads, Perfect Brews, & Fine Patisseries",
+    about: "About Us - Bread N' Br☕︎w",
+    menu: "Our Menu - Bread N' Br☕︎w",
+    catering: "Catering Excellence - Bread N' Br☕︎w",
+    contact: "Contact Us - Bread N' Br☕︎w",
+  };
+  document.title = titles[state.currentPage] || titles.home;
+
+  // Render components
+  navigation.innerHTML = window.navigation;
+  mainContent.innerHTML = pages[state.currentPage] || pages.home;
+  footerElement.innerHTML = footer;
+
+  // Update navigation state
+  updateNavigation();
 }
 
 // Menu functionality
 function printMenu() {
-    const printStyles = `
+  const printStyles = `
         <style>
             @media print {
                 .no-print { display: none !important; }
@@ -1363,11 +1366,11 @@ function printMenu() {
         </style>
     `;
 
-    const printContent = document.querySelector('.menu-content')?.innerHTML || '';
-    const printWindow = window.open('', '_blank');
+  const printContent = document.querySelector(".menu-content")?.innerHTML || "";
+  const printWindow = window.open("", "_blank");
 
-    if (printWindow) {
-        printWindow.document.write(`
+  if (printWindow) {
+    printWindow.document.write(`
             <!DOCTYPE html>
             <html>
             <head>
@@ -1398,26 +1401,26 @@ function printMenu() {
             </body>
             </html>
         `);
-        printWindow.document.close();
-        printWindow.print();
-    }
+    printWindow.document.close();
+    printWindow.print();
+  }
 }
 
 function exportToText() {
-    const menuText = generateMenuText();
-    const blob = new Blob([menuText], { type: 'text/plain' });
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = 'bread-n-brew-menu.txt';
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    window.URL.revokeObjectURL(url);
+  const menuText = generateMenuText();
+  const blob = new Blob([menuText], { type: "text/plain" });
+  const url = window.URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "bread-n-brew-menu.txt";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  window.URL.revokeObjectURL(url);
 }
 
 function generateMenuText() {
-    return `
+  return `
 BREAD N' BREW
 Artisan Breads, Perfect Brews, & Fine Patisseries
 512 Springfield Avenue, Berkeley Heights, NJ
@@ -1555,39 +1558,43 @@ Thank you for choosing Bread N' Brew!
 
 // Router functionality
 function initRouter() {
-    // Handle back/forward buttons
-    window.addEventListener('popstate', (event) => {
-        const page = event.state?.page || getPageFromURL();
-        state.currentPage = page;
-        renderPage();
-    });
-    
-    // Set initial page based on URL
-    const initialPage = getPageFromURL();
-    state.currentPage = initialPage;
-    
-    // Push initial state
-    window.history.replaceState({ page: initialPage }, '', window.location.pathname);
+  // Handle back/forward buttons
+  window.addEventListener("popstate", (event) => {
+    const page = event.state?.page || getPageFromURL();
+    state.currentPage = page;
+    renderPage();
+  });
+
+  // Set initial page based on URL
+  const initialPage = getPageFromURL();
+  state.currentPage = initialPage;
+
+  // Push initial state
+  window.history.replaceState(
+    { page: initialPage },
+    "",
+    window.location.pathname,
+  );
 }
 
 function getPageFromURL() {
-    const path = window.location.pathname;
-    if (path === '/' || path === '') return 'home';
-    if (path.startsWith('/')) return path.slice(1);
-    return 'home';
+  const path = window.location.pathname;
+  if (path === "/" || path === "") return "home";
+  if (path.startsWith("/")) return path.slice(1);
+  return "home";
 }
 
 // Initialize app
 function init() {
-    // Store navigation template globally
-    window.navigation = navigation;
-    
-    // Initialize router
-    initRouter();
-    
-    // Render initial page
-    renderPage();
+  // Store navigation template globally
+  window.navigation = navigation;
+
+  // Initialize router
+  initRouter();
+
+  // Render initial page
+  renderPage();
 }
 
 // Start the app when DOM is loaded
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener("DOMContentLoaded", init);
